@@ -5,10 +5,14 @@ import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Rectangle;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.event.MenuEvent;
+import javax.swing.event.MenuListener;
 import javax.swing.JLabel;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -16,11 +20,12 @@ import javax.swing.ImageIcon;
 import javax.swing.JToolBar;
 import java.awt.FlowLayout;
 import javax.swing.JMenu;
+import javax.swing.JSeparator;
 
-public class ViewMenu extends JFrame {
+public class ViewMenu extends JFrame implements ActionListener,MenuListener {
 	private Dimension tamPantalla;
 	private Rectangle pantalla;
-	
+	JMenu menuPatients;
 	public ViewMenu() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);		
 		setTitle("GESTION DE HOSPITAL");
@@ -40,26 +45,24 @@ public class ViewMenu extends JFrame {
 		JMenuBar menuBar = new JMenuBar();
 		superior.add(menuBar);
 		
-		JMenu mnNewMenu = new JMenu("Pacientes");
-		menuBar.add(mnNewMenu);
+	    menuPatients = new JMenu("Pacientes");
+	    menuPatients.setIcon(new ImageIcon(ViewMenu.class.getResource("/co/com/vass/resources/patients.png")));
+		menuBar.add(menuPatients);
+		menuPatients.addMenuListener(this);
 		
+		JSeparator separator = new JSeparator();
+		menuBar.add(separator);
 		JMenu mnNewMenu_1 = new JMenu("Medicos");
+		mnNewMenu_1.setIcon(new ImageIcon(ViewMenu.class.getResource("/co/com/vass/resources/doctor.png")));
 		menuBar.add(mnNewMenu_1);
 		
 		JMenu mnCuartos = new JMenu("Cuartos");
+		mnCuartos.setIcon(new ImageIcon(ViewMenu.class.getResource("/co/com/vass/resources/bedroom.png")));
 		menuBar.add(mnCuartos);
 		
 		JMenu mnHistoriaClinica = new JMenu("Historia clinica");
+		mnHistoriaClinica.setIcon(new ImageIcon(ViewMenu.class.getResource("/co/com/vass/resources/historia.png")));
 		menuBar.add(mnHistoriaClinica);
-		
-		JPanel panel = new JPanel();
-		menuBar.add(panel);
-		FlowLayout flowLayout = (FlowLayout) panel.getLayout();
-		flowLayout.setAlignment(FlowLayout.RIGHT);
-		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(ViewMenu.class.getResource("/co/com/vass/resources/mano.png")));
-		panel.add(lblNewLabel);
 		
 		JPanel central = new JPanel();
 		getContentPane().add(central, BorderLayout.CENTER);
@@ -72,6 +75,33 @@ public class ViewMenu extends JFrame {
 	}
 	
 	public void start_components() {
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		
+	}
+
+	@Override
+	public void menuCanceled(MenuEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void menuDeselected(MenuEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void menuSelected(MenuEvent e) {
+		if (e.getSource() == menuPatients) {
+			MenuPatients men=new MenuPatients();
+			men.setVisible(true);
+		
+		}
 	}
 
 }
