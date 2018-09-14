@@ -35,6 +35,7 @@ public class ViewLogin extends JDialog implements ActionListener {
 	JButton btnIngresar;
 
 	public ViewLogin() {
+	
 		setTitle("Ventana Login");
 		setBounds(100, 100, 504, 337);
 		setLocationRelativeTo(null);
@@ -93,8 +94,7 @@ public class ViewLogin extends JDialog implements ActionListener {
 
 	public void loginUser() {
 		User usuario = new User();
-		Messags answer;
-		
+		Messags answer;		
 		usuario.setName(textField.getText());
 		usuario.setPassword(new String(passwordField.getPassword()));
 		answer = coordinator.validateLogin(usuario);
@@ -117,8 +117,8 @@ public class ViewLogin extends JDialog implements ActionListener {
 			break;
 			
 		case OK_USER:
-			JFrame f = new JFrame();
-			JOptionPane.showMessageDialog(f, Messags.OK_USER);
+//			JFrame f = new JFrame();
+//			JOptionPane.showMessageDialog(f, Messags.OK_USER);
 			break;
 		}
 
