@@ -1,5 +1,7 @@
 package co.com.vass.controller;
 
+import javax.swing.text.MaskFormatter;
+
 import co.com.vass.dao.PatientDAO;
 import co.com.vass.view.MenuPatients;
 import co.com.vass.vo.Patient;
@@ -7,11 +9,16 @@ import co.com.vass.vo.Patient;
 public class StartAplication {
 	                    
 	public static void main(String[] args) {
-		//MenuPatients m=new MenuPatients();
+//		MenuPatients m=new MenuPatients();		
+//		m.setVisible(true);
+	
 		
-		//m.setVisible(true);
-		SetupApplication setupApplication=new SetupApplication();
+		
+		
+SetupApplication setupApplication=new SetupApplication();
 		setupApplication.startSystem();	
+		
+		
 //		Patient pa=new Patient();
 //		pa.setAddress("cr 5");
 //		pa.setName("jham");

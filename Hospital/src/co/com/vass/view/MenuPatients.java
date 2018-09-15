@@ -8,13 +8,16 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import javax.swing.text.MaskFormatter;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.ButtonModel;
 import javax.swing.JSeparator;
 import java.awt.Color;
 import javax.swing.JComboBox;
+import javax.swing.JFormattedTextField;
 import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import java.awt.FlowLayout;
@@ -27,6 +30,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.text.NumberFormat;
+import java.text.ParseException;
+import java.util.Locale;
 
 import com.jgoodies.forms.layout.FormLayout;
 import com.jgoodies.forms.layout.ColumnSpec;
@@ -46,12 +52,12 @@ import javax.swing.ImageIcon;
 import javax.swing.JRadioButton;
 import com.toedter.calendar.JCalendar;
 import com.toedter.calendar.JDateChooser;
+import java.awt.event.KeyAdapter;
 
 public class MenuPatients extends JFrame implements ActionListener, KeyListener, DocumentListener {
 
 	private JPanel contentPane;
 	private JTextField textName;
-	private JTextField textAge;
 	private JTextField textAddress;
 	private JTextField textPhone;
 	private JComboBox spnDocument;
@@ -67,11 +73,13 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 	ButtonGroup buttonGroup;
 	private Coordinator coordinator;
 	JButton btnAdd;
+	JFormattedTextField formatAge;
 
 	public MenuPatients() {
+
 //		javax.swing.JDialog  parent, boolean modal
 //		super();
-	
+
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 650, 400);
 		setLocationRelativeTo(null);
@@ -97,6 +105,7 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		btnAdd = new JButton("REGISTRAR");
 		btnAdd.setIcon(new ImageIcon(MenuPatients.class.getResource("/co/com/vass/resources/add.png")));
 		btnAdd.addActionListener(this);
+		btnAdd.setEnabled(false);
 		botones.add(btnAdd);
 
 		JButton btnSerch = new JButton("BUSCAR");
@@ -136,10 +145,6 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		JLabel lblGenero = new JLabel("Sexo");
 		lblGenero.setBounds(330, 31, 46, 14);
 
-		textAge = new JTextField();
-		textAge.setBounds(92, 85, 86, 20);
-		textAge.setColumns(10);
-
 		textAddress = new JTextField();
 		textAddress.setBounds(92, 115, 86, 20);
 		textAddress.setColumns(10);
@@ -165,7 +170,6 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		centro.add(lblNewLabel_1);
 		centro.add(lblNewLabel_2);
 		centro.add(lblEdad);
-		centro.add(textAge);
 
 		JLabel lblPeso = new JLabel("Peso");
 		lblPeso.setBounds(330, 62, 46, 14);
@@ -206,9 +210,17 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		centro.add(lblNewLabel_4);
 
 		textHeight = new JTextField();
+
 		textHeight.setBounds(375, 110, 86, 20);
 		centro.add(textHeight);
 		textHeight.setColumns(10);
+
+		NumberFormat format = NumberFormat.getIntegerInstance();
+		format.setGroupingUsed(false);
+
+		// textHeight = new JFormattedTextField(format);
+
+		textHeight.addKeyListener(this);
 
 		JLabel lblTrabajo = new JLabel("Trabajo");
 		lblTrabajo.setBounds(35, 169, 46, 14);
@@ -220,22 +232,25 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		textJob.setColumns(10);
 
 		JLabel lblCorreo = new JLabel("Correo");
-		lblCorreo.setBounds(319, 144, 46, 14);
+		lblCorreo.setBounds(319, 160, 46, 14);
 		centro.add(lblCorreo);
 
 		textEmail = new JTextField();
-		textEmail.setBounds(375, 144, 86, 20);
+		textEmail.setBounds(375, 160, 86, 20);
 		centro.add(textEmail);
 		textEmail.setColumns(10);
 
 		JLabel lblNacionalidad = new JLabel("Nacionalidad");
-		lblNacionalidad.setBounds(302, 178, 74, 14);
+		lblNacionalidad.setBounds(302, 194, 74, 14);
 		centro.add(lblNacionalidad);
 
 		textNatiolaty = new JTextField();
-		textNatiolaty.setBounds(375, 175, 86, 20);
+		textNatiolaty.setBounds(375, 191, 86, 20);
 		centro.add(textNatiolaty);
 		textNatiolaty.setColumns(10);
+		formatAge = new JFormattedTextField(createFormatter("###"));
+		formatAge.setBounds(92, 90, 80, 20);
+		centro.add(formatAge);
 	}
 
 	public Coordinator getCoordinator() {
@@ -245,7 +260,6 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 	public void setCoordinator(Coordinator coordinator) {
 		this.coordinator = coordinator;
 	}
-	
 
 	public Patient getPatient() {
 		return patient;
@@ -256,9 +270,8 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 	}
 
 	public void inputData() {
-
 		patient.setName(textName.getText());
-		patient.setAge(Integer.parseInt(textAge.getText()));
+		patient.setAge(Integer.parseInt(formatAge.getText()));
 		patient.setPhone(textPhone.getText());
 		patient.setDiagnostic(textDiagnostic.getText());
 		patient.setAddress(textAddress.getText());
@@ -270,8 +283,6 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 
 	}
 
-	
-
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == rdbtnHombre || e.getSource() == rdbtnMujer) {
@@ -279,40 +290,42 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 			String t = "Not selected";
 			if (buttonModel != null)
 				t = buttonModel.getActionCommand();
-		
-			 patient.setGender(t);
+
+			patient.setGender(t);
 			System.out.println(t);
 		}
 
 		if (e.getSource() == btnAdd) {
 			inputData();
 			Messags ansswer = coordinator.validatePatient(patient);
-			
 
 		}
 
 	}
 
+	protected MaskFormatter createFormatter(String s) {
+		MaskFormatter formatter = null;
+		try {
+			formatter = new MaskFormatter(s);
+		} catch (java.text.ParseException exc) {
+			System.err.println("formatter is bad: " + exc.getMessage());
+			System.exit(-1);
+		}
+		return formatter;
+	}
+
 	@Override
 	public void keyPressed(KeyEvent e) {
-		char c = e.getKeyChar();
-		if (Character.isLetter(c) && e.isAltDown()) {
-
-		}
-
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void keyReleased(KeyEvent e) {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void keyTyped(KeyEvent e) {
-		// TODO Auto-generated method stub
 
 	}
 
