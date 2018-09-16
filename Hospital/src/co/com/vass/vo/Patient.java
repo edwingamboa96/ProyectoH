@@ -21,8 +21,8 @@ import javax.persistence.Table;
     @AttributeOverride(name="gender", column=@Column(name="gender"))  ,
     @AttributeOverride(name="phone", column=@Column(name="phone"))  ,
     @AttributeOverride(name="address", column=@Column(name="address"))  ,
-    @AttributeOverride(name="email", column=@Column(name="email"))  
-   
+    @AttributeOverride(name="email", column=@Column(name="email")),  
+    @AttributeOverride(name="idnumber", column=@Column(name="idnumber")) 
     
     
 })  

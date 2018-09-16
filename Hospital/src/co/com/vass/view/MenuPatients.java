@@ -8,7 +8,12 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import javax.swing.text.InternationalFormatter;
 import javax.swing.text.MaskFormatter;
+import javax.swing.text.NumberFormatter;
+
+import org.jboss.logging.FormatWith;
+
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.BoxLayout;
@@ -30,9 +35,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.text.ParseException;
+import java.util.List;
 import java.util.Locale;
+import java.util.Vector;
 
 import com.jgoodies.forms.layout.FormLayout;
 import com.jgoodies.forms.layout.ColumnSpec;
@@ -61,25 +71,27 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 	private JTextField textAddress;
 	private JTextField textPhone;
 	private JComboBox spnDocument;
-	private JTextField textWeight;
 	private JTextField textDiagnostic;
-	private JTextField textHeight;
 	private JTextField textJob;
 	private JTextField textEmail;
 	private JTextField textNatiolaty;
 	private JRadioButton rdbtnMujer;
 	private JRadioButton rdbtnHombre;
-	Patient patient;
+	private Patient patient;
+	private boolean checkInput;
+	private String gener;
 	ButtonGroup buttonGroup;
 	private Coordinator coordinator;
-	JButton btnAdd;
-	JFormattedTextField formatAge;
+	private JButton btnAdd, btnSerch, btnUpdate, btnDelete;
+	private JFormattedTextField formatAge;
+	private JFormattedTextField formatDelete;
+	private JFormattedTextField formatWeight;
+	private JFormattedTextField formatHeigth;
+	private List<JTextField> textFields = null;
+	private JFormattedTextField formatSerch;
+	private JFormattedTextField formatIdNumber;
 
 	public MenuPatients() {
-
-//		javax.swing.JDialog  parent, boolean modal
-//		super();
-
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 650, 400);
 		setLocationRelativeTo(null);
@@ -108,15 +120,18 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		btnAdd.setEnabled(false);
 		botones.add(btnAdd);
 
-		JButton btnSerch = new JButton("BUSCAR");
+		btnSerch = new JButton("BUSCAR");
 		btnSerch.setIcon(new ImageIcon(MenuPatients.class.getResource("/co/com/vass/resources/search.png")));
+		btnSerch.addActionListener(this);
 		botones.add(btnSerch);
 
-		JButton btnUpdate = new JButton("ACTULIZAR");
+		btnUpdate = new JButton("ACTULIZAR");
+		btnUpdate.addActionListener(this);
 		btnUpdate.setIcon(new ImageIcon(MenuPatients.class.getResource("/co/com/vass/resources/save.png")));
 		botones.add(btnUpdate);
 
-		JButton btnDelete = new JButton(" ELIMINAR");
+		btnDelete = new JButton(" ELIMINAR");
+		btnDelete.addActionListener(this);
 		btnDelete.setIcon(new ImageIcon(MenuPatients.class.getResource("/co/com/vass/resources/delete.png")));
 		botones.add(btnDelete);
 
@@ -174,15 +189,12 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		JLabel lblPeso = new JLabel("Peso");
 		lblPeso.setBounds(330, 62, 46, 14);
 		centro.add(lblPeso);
-
-		textWeight = new JTextField();
-		textWeight.setBounds(375, 59, 86, 20);
-		centro.add(textWeight);
-		textWeight.setColumns(10);
 		buttonGroup = new ButtonGroup();
 		rdbtnHombre = new JRadioButton("Hombre");
 		rdbtnHombre.setBounds(355, 27, 63, 23);
 		rdbtnHombre.setActionCommand("HOMBRE");
+		rdbtnHombre.setSelected(true);
+		setGener("HOMBRE");
 		centro.add(rdbtnHombre);
 
 		rdbtnMujer = new JRadioButton("mujer");
@@ -208,19 +220,6 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		JLabel lblNewLabel_4 = new JLabel("Estatura");
 		lblNewLabel_4.setBounds(312, 116, 46, 14);
 		centro.add(lblNewLabel_4);
-
-		textHeight = new JTextField();
-
-		textHeight.setBounds(375, 110, 86, 20);
-		centro.add(textHeight);
-		textHeight.setColumns(10);
-
-		NumberFormat format = NumberFormat.getIntegerInstance();
-		format.setGroupingUsed(false);
-
-		// textHeight = new JFormattedTextField(format);
-
-		textHeight.addKeyListener(this);
 
 		JLabel lblTrabajo = new JLabel("Trabajo");
 		lblTrabajo.setBounds(35, 169, 46, 14);
@@ -248,9 +247,63 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		textNatiolaty.setBounds(375, 191, 86, 20);
 		centro.add(textNatiolaty);
 		textNatiolaty.setColumns(10);
-		formatAge = new JFormattedTextField(createFormatter("###"));
+		formatDelete = new JFormattedTextField();
+		formatAge = new JFormattedTextField(createFormatter());
+		formatWeight = new JFormattedTextField(doubleFormatter());
+		formatHeigth = new JFormattedTextField(doubleFormatter());
+		formatSerch = new JFormattedTextField(formatteInt());
+		formatIdNumber = new JFormattedTextField(formatteInt());
 		formatAge.setBounds(92, 90, 80, 20);
+		textFields = new Vector<>();
+
+		textFields.add(textName);
+		textFields.add(textAddress);
+		textFields.add(textDiagnostic);
+		textFields.add(formatWeight);
+		textFields.add(textEmail);
+		textFields.add(textNatiolaty);
+		textFields.add(textPhone);
+		textFields.add(formatHeigth);
+		textFields.add(textJob);
+		textFields.add(formatAge);
+		textFields.add(formatIdNumber);
+
+		textName.getDocument().addDocumentListener(this);
+		formatAge.getDocument().addDocumentListener(this);
+		textNatiolaty.getDocument().addDocumentListener(this);
+		textEmail.getDocument().addDocumentListener(this);
+		textPhone.getDocument().addDocumentListener(this);
+		textDiagnostic.getDocument().addDocumentListener(this);
+		textAddress.getDocument().addDocumentListener(this);
+		textJob.getDocument().addDocumentListener(this);
+		formatHeigth.getDocument().addDocumentListener(this);
+		formatWeight.getDocument().addDocumentListener(this);
+		formatIdNumber.getDocument().addDocumentListener(this);
 		centro.add(formatAge);
+
+		formatWeight.setBounds(375, 59, 86, 20);
+		centro.add(formatWeight);
+
+		formatHeigth.setBounds(375, 115, 86, 20);
+		centro.add(formatHeigth);
+
+		formatSerch.setBounds(92, 214, 86, 20);
+		centro.add(formatSerch);
+
+		formatIdNumber.setBounds(183, 59, 70, 20);
+		centro.add(formatIdNumber);
+
+		JLabel lblNewLabel_5 = new JLabel("BUSCAR");
+		lblNewLabel_5.setBounds(35, 217, 46, 14);
+		centro.add(lblNewLabel_5);
+
+		JLabel lblEliminar = new JLabel("ELIMINAR");
+		lblEliminar.setBounds(234, 220, 53, 14);
+		centro.add(lblEliminar);
+
+		formatDelete.setBounds(312, 219, 86, 20);
+		centro.add(formatDelete);
+
 	}
 
 	public Coordinator getCoordinator() {
@@ -269,38 +322,140 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		this.patient = patient;
 	}
 
-	public void inputData() {
-		patient.setName(textName.getText());
+	public String getGener() {
+		return gener;
+	}
+
+	public void setGener(String gener) {
+		this.gener = gener;
+	}
+
+	public boolean isCheckInput() {
+		return checkInput;
+	}
+
+	public void setCheckInput(boolean checkInput) {
+		this.checkInput = checkInput;
+	}
+
+	public Patient savePatient() {
+		Patient patient = new Patient();
 		patient.setAge(Integer.parseInt(formatAge.getText()));
+		patient.setHeight(Double.parseDouble(formatHeigth.getText().replace(" ", "").replace(",", ".")));
 		patient.setPhone(textPhone.getText());
 		patient.setDiagnostic(textDiagnostic.getText());
 		patient.setAddress(textAddress.getText());
 		patient.setEmail(textEmail.getText());
-		patient.setHeight(Double.parseDouble(textHeight.getText()));
 		patient.setJob(textJob.getText());
 		patient.setNationality(textNatiolaty.getText());
 		patient.setDocument(spnDocument.getSelectedItem().toString());
+		patient.setGender(getGener());
+		patient.setName(textName.getText());
+		patient.setWeight(Double.parseDouble(formatWeight.getText().replace(" ", "").replace(",", ".")));
+		patient.setIdnumber(Integer.parseInt(formatIdNumber.getText()));
+		
+		return patient;
+	}
 
+	public void readUser(Patient patientIN) {//optiene objeto de la BD
+
+		textName.setText(patientIN.getName());
+		textAddress.setText(patientIN.getAddress());
+		textPhone.setText(patientIN.getPhone());
+		spnDocument.setSelectedItem(patientIN.getDocument());
+		textDiagnostic.setText(patientIN.getDiagnostic());
+		textJob.setText(patientIN.getJob());
+		textEmail.setText(patientIN.getEmail());
+		textNatiolaty.setText(patientIN.getNationality());
+		formatAge.setText(String.valueOf(patientIN.getAge()));
+		formatWeight.setText(String.valueOf(patientIN.getWeight()));
+		formatHeigth.setText(String.valueOf(patientIN.getHeight()));
+		System.out.println("" + patientIN.getIdPerson());
+		setPatient(patientIN);//para guardar el ID
+	}
+	public Patient updatePatient() {
+		Patient patient = new Patient();
+		patient.setAge(Integer.parseInt(formatAge.getText()));
+		patient.setHeight(Double.parseDouble(formatHeigth.getText().replace(" ", "").replace(",", ".")));
+		patient.setPhone(textPhone.getText());
+		patient.setDiagnostic(textDiagnostic.getText());
+		patient.setAddress(textAddress.getText());
+		patient.setEmail(textEmail.getText());
+		patient.setJob(textJob.getText());
+		patient.setNationality(textNatiolaty.getText());
+		patient.setDocument(spnDocument.getSelectedItem().toString());
+		patient.setGender(getGener());
+		patient.setName(textName.getText());
+		patient.setWeight(Double.parseDouble(formatWeight.getText().replace(" ", "").replace(",", ".")));
+		patient.setIdnumber(Integer.parseInt(formatIdNumber.getText()));
+		patient.setIdPerson(getPatient().getIdPerson());//leer el actual ID
+		return patient;
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == btnAdd && isCheckInput()) {
+			Messags ansswer = coordinator.savePatient(savePatient());
+
+		}
+		if (e.getSource() == btnSerch) {
+			Patient patient = new Patient();
+			patient.setIdnumber(Integer.parseInt(formatSerch.getText()));//leer documento a busacr
+			readUser(coordinator.serchPatient(patient));
+
+		}
+
+		if (e.getSource() == btnUpdate&& isCheckInput()) {
+			
+			Messags ansswer = coordinator.updatePatient(updatePatient());
+		}
+		if (e.getSource() == btnDelete) {
+			Messags ansswer = coordinator.deletePatient(getPatient());
+		}
+
 		if (e.getSource() == rdbtnHombre || e.getSource() == rdbtnMujer) {
 			ButtonModel buttonModel = buttonGroup.getSelection();
 			String t = "Not selected";
 			if (buttonModel != null)
 				t = buttonModel.getActionCommand();
-
-			patient.setGender(t);
-			System.out.println(t);
+			setGener(t);
 		}
 
-		if (e.getSource() == btnAdd) {
-			inputData();
-			Messags ansswer = coordinator.validatePatient(patient);
+	}
 
+	private void updateButtonEnabledStatus(List<JTextField> fields) {
+		boolean enabled = true;
+		for (JTextField field : fields) {
+			if (field.getText().length() == 0) {
+				enabled = false;
+				break;
+			}
 		}
+		btnAdd.setEnabled(enabled);
+		setCheckInput(enabled);
 
+	}
+
+	protected NumberFormatter createFormatter() {
+		NumberFormat intFormat = NumberFormat.getIntegerInstance();
+		intFormat.setGroupingUsed(false);
+		NumberFormatter numberFormatter = new NumberFormatter(intFormat);
+		numberFormatter.setValueClass(Integer.class);
+		numberFormatter.setAllowsInvalid(false);
+		numberFormatter.setMinimum(1);
+		numberFormatter.setMaximum(1000);
+		return numberFormatter;
+	}
+
+	protected NumberFormatter formatteInt() {
+		NumberFormat intFormat = DecimalFormat.getInstance();
+		intFormat.setGroupingUsed(false);
+		NumberFormatter numberFormatter = new NumberFormatter(intFormat);
+		numberFormatter.setValueClass(Integer.class);
+		numberFormatter.setAllowsInvalid(false);
+		numberFormatter.setMinimum(1);
+		numberFormatter.setMaximum(1000000000);
+		return numberFormatter;
 	}
 
 	protected MaskFormatter createFormatter(String s) {
@@ -312,6 +467,19 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 			System.exit(-1);
 		}
 		return formatter;
+	}
+
+	protected InternationalFormatter doubleFormatter() {
+		NumberFormat format = DecimalFormat.getInstance();
+		format.setMinimumFractionDigits(1);
+		format.setMaximumFractionDigits(2);
+		// format.setRoundingMode(RoundingMode.HALF_UP);
+		InternationalFormatter formatter = new InternationalFormatter(format);
+		formatter.setAllowsInvalid(false);
+		formatter.setMinimum(0.0);
+		formatter.setMaximum(100.00);
+		return formatter;
+
 	}
 
 	@Override
@@ -331,19 +499,19 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 
 	@Override
 	public void changedUpdate(DocumentEvent e) {
-		// TODO Auto-generated method stub
+		updateButtonEnabledStatus(textFields);
 
 	}
 
 	@Override
 	public void insertUpdate(DocumentEvent e) {
-		// TODO Auto-generated method stub
+		updateButtonEnabledStatus(textFields);
 
 	}
 
 	@Override
 	public void removeUpdate(DocumentEvent e) {
-		// TODO Auto-generated method stub
+		updateButtonEnabledStatus(textFields);
 
 	}
 }

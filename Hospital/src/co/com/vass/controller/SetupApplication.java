@@ -25,7 +25,7 @@ public class SetupApplication {
 		coordinator.setLoginview(loginview);
 		coordinator.setMenuPatiens(menuPatients);
 		menuPatients.setCoordinator(coordinator);
-		menuPatients.setPatient(patient);
+		//menuPatients.setPatient(patient);
 
 	}
 

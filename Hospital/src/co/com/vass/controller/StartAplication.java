@@ -7,24 +7,22 @@ import co.com.vass.view.MenuPatients;
 import co.com.vass.vo.Patient;
 
 public class StartAplication {
-	                    
+
 	public static void main(String[] args) {
-//		MenuPatients m=new MenuPatients();		
-//		m.setVisible(true);
-	
-		
-		
-		
-SetupApplication setupApplication=new SetupApplication();
-		setupApplication.startSystem();	
-		
-		
-//		Patient pa=new Patient();
-//		pa.setAddress("cr 5");
+
+
+		SetupApplication setupApplication = new SetupApplication();
+		setupApplication.startSystem();
+
+//	Patient pa=new Patient();
+//	pa.setIdPerson(21);
+//	pa.setAge(43);
 //		pa.setName("jham");
 //		pa.setDiagnostic("migraña");
-//		PatientDAO pat=new PatientDAO();
-//		pat.createPatien(pa);
+//	PatientDAO pat=new PatientDAO();
+//	pat.deletePatien(pa);
+	//pat.updatePatien(pa);
+//		pat.readPatienr(pa);
 
 	}
 

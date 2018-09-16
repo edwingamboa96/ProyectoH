@@ -90,13 +90,35 @@ public class Logic {
 		return answer;
 	}
 
-	public Messags validatePatient(Patient patient) {
-		Messags result =Messags .ADD_PATIENT_OK;
-    PatientDAO patientDAO =new PatientDAO();
-    patientDAO.createPatien(patient);
+	public Messags savePatient(Patient patient) {
+		Messags result = Messags.ADD_PATIENT_OK;
+		PatientDAO patientDAO = new PatientDAO();
+		patientDAO.createPatien(patient);
 		return result;
 	}
-	
+
+	public Patient serchPatient(Patient patientSerch) {
+		Messags result = Messags.ADD_PATIENT_OK;
+		PatientDAO patientDAO = new PatientDAO();
+		return patientDAO.readPatienr(patientSerch);
+
+	}
+
+	public Messags updatePatient(Patient patient) {
+		Messags result = Messags.ADD_PATIENT_OK;
+		PatientDAO patientDAO = new PatientDAO();
+		patientDAO.updatePatien(patient);
+
+		return result;
+	}
+
+	public Messags deletePatient(Patient patient) {
+		Messags result = Messags.ADD_PATIENT_OK;
+		PatientDAO patientDAO = new PatientDAO();
+		patientDAO.deletePatien(patient);
+
+		return result;
+	}
 
 //	public Messags validatePatient(Patient patient) {
 //		

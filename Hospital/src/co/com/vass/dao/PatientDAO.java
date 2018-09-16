@@ -22,26 +22,23 @@ public class PatientDAO extends ConectionDAO {
 	boolean isUser = false;
 	Session session = getSession();
 
-	public boolean readPatienr(Patient patient) {
-
-		Patient object = null;
+	public Patient readPatienr(Patient patient) {
+		Patient patientRead = null;		
+		session.beginTransaction();
 		try {
-			Query theStudents = session.createQuery(" from Patient where document=" + "'" + patient.getDocument()
-					+ "'and name=" + "'" + patient.getName() + "'");
-			object = (Patient) theStudents.uniqueResult();
-			if (object == null) {
+			Query theStudents = session.createQuery(" from Patient where idnumber=" + "'"+patient.getIdnumber()+"'");		
+			patientRead = (Patient) theStudents.uniqueResult();
+			if (patientRead == null) {
 				isUser = false;
 			} else {
 				isUser = true;
 			}
-
 			session.getTransaction().commit();
-			System.out.println("" + object.getEmail());
-			System.out.println("Done!");
 		} finally {
 			session.close();
 		}
-		return isUser;
+	
+		return patientRead;
 	}
 
 	public boolean updatePatien(Patient patient) {
@@ -55,10 +52,12 @@ public class PatientDAO extends ConectionDAO {
 	}
 
 	public boolean deletePatien(Patient patientIN) {
-		Patient object = null;
-		Query theStudents = session.createQuery(" from Patient where document=" + "'" + patientIN.getDocument() + "'");
-		object = (Patient) theStudents.uniqueResult();
 		session.beginTransaction();
+		
+		Patient object =session.get(Patient.class, patientIN.getIdPerson());
+//		Query theStudents = session.createQuery(" from Patient where document=" + "'" + patientIN.getDocument() + "'");
+//		object = (Patient) theStudents.uniqueResult();
+		
 		session.delete(object);
 		session.getTransaction().commit();
 		boolean isUser = false;

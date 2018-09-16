@@ -52,8 +52,20 @@ public class Coordinator {
 		return logic.validateLogin(usuario);
 	}
 
-	public Messags validatePatient(Patient patient) {
-		return logic.validatePatient(patient);
+	public Messags savePatient(Patient patient) {
+		return logic.savePatient(patient);
+
+	}
+	public Patient serchPatient(Patient patient) {
+		return logic.serchPatient(patient);
+
+	}
+	public Messags updatePatient(Patient patient) {
+		return logic.updatePatient(patient);
+
+	}
+	public Messags deletePatient(Patient patient) {
+		return logic.deletePatient(patient);
 
 	}
 

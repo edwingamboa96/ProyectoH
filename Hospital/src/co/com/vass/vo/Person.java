@@ -51,6 +51,8 @@ public class Person  {
 	@Column(name="email")
 	private String email;
 	
+	@Column(name="idnumber")
+	private int idnumber;
 	 
 	public int getIdPerson() {
 		return idPerson;
@@ -120,6 +122,12 @@ public class Person  {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public int getIdnumber() {
+		return idnumber;
+	}
+	public void setIdnumber(int idnumber) {
+		this.idnumber = idnumber;
 	} 
 	
 	
