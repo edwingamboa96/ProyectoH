@@ -1,7 +1,6 @@
 package co.com.vass.view;
 
 import java.awt.BorderLayout;
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -11,60 +10,29 @@ import javax.swing.event.DocumentListener;
 import javax.swing.text.InternationalFormatter;
 import javax.swing.text.MaskFormatter;
 import javax.swing.text.NumberFormatter;
-
-import org.jboss.logging.FormatWith;
-
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.ButtonModel;
-import javax.swing.JSeparator;
-import java.awt.Color;
 import javax.swing.JComboBox;
 import javax.swing.JFormattedTextField;
-import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import java.awt.FlowLayout;
 import javax.swing.JTextField;
-import java.awt.GridLayout;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
-import java.text.ParseException;
 import java.util.List;
-import java.util.Locale;
 import java.util.Vector;
-
-import com.jgoodies.forms.layout.FormLayout;
-import com.jgoodies.forms.layout.ColumnSpec;
-import com.jgoodies.forms.layout.RowSpec;
-
 import co.com.vass.controller.Coordinator;
 import co.com.vass.modelo.Logic.Messags;
 import co.com.vass.vo.Patient;
-import javassist.compiler.Parser;
-
-import com.jgoodies.forms.layout.FormSpecs;
-import net.miginfocom.swing.MigLayout;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.ImageIcon;
 import javax.swing.JRadioButton;
-import com.toedter.calendar.JCalendar;
-import com.toedter.calendar.JDateChooser;
-import java.awt.event.KeyAdapter;
 
-public class MenuPatients extends JFrame implements ActionListener, KeyListener, DocumentListener {
+public class ViewMenuPatients extends JFrame implements ActionListener, KeyListener, DocumentListener {
 
 	private JPanel contentPane;
 	private JTextField textName;
@@ -91,7 +59,7 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 	private JFormattedTextField formatSerch;
 	private JFormattedTextField formatIdNumber;
 
-	public MenuPatients() {
+	public ViewMenuPatients() {
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 650, 400);
 		setLocationRelativeTo(null);
@@ -115,24 +83,24 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		botones.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 
 		btnAdd = new JButton("REGISTRAR");
-		btnAdd.setIcon(new ImageIcon(MenuPatients.class.getResource("/co/com/vass/resources/add.png")));
+		btnAdd.setIcon(new ImageIcon(ViewMenuPatients.class.getResource("/co/com/vass/resources/add.png")));
 		btnAdd.addActionListener(this);
 		btnAdd.setEnabled(false);
 		botones.add(btnAdd);
 
 		btnSerch = new JButton("BUSCAR");
-		btnSerch.setIcon(new ImageIcon(MenuPatients.class.getResource("/co/com/vass/resources/search.png")));
+		btnSerch.setIcon(new ImageIcon(ViewMenuPatients.class.getResource("/co/com/vass/resources/search.png")));
 		btnSerch.addActionListener(this);
 		botones.add(btnSerch);
 
 		btnUpdate = new JButton("ACTULIZAR");
 		btnUpdate.addActionListener(this);
-		btnUpdate.setIcon(new ImageIcon(MenuPatients.class.getResource("/co/com/vass/resources/save.png")));
+		btnUpdate.setIcon(new ImageIcon(ViewMenuPatients.class.getResource("/co/com/vass/resources/save.png")));
 		botones.add(btnUpdate);
 
 		btnDelete = new JButton(" ELIMINAR");
 		btnDelete.addActionListener(this);
-		btnDelete.setIcon(new ImageIcon(MenuPatients.class.getResource("/co/com/vass/resources/delete.png")));
+		btnDelete.setIcon(new ImageIcon(ViewMenuPatients.class.getResource("/co/com/vass/resources/delete.png")));
 		botones.add(btnDelete);
 
 		JPanel centro = new JPanel();
@@ -168,7 +136,7 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		textPhone.setBounds(92, 141, 86, 20);
 		textPhone.setColumns(10);
 
-		String genero[] = { "hombre", "mujer" };
+		//String genero[] = { "hombre", "mujer" };
 		String documentType[] = { "cedula", "pasaporte", "targeta identidad" };
 
 		spnDocument = new JComboBox(documentType);
@@ -353,11 +321,11 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		patient.setName(textName.getText());
 		patient.setWeight(Double.parseDouble(formatWeight.getText().replace(" ", "").replace(",", ".")));
 		patient.setIdnumber(Integer.parseInt(formatIdNumber.getText()));
-		
+
 		return patient;
 	}
 
-	public void readUser(Patient patientIN) {//optiene objeto de la BD
+	public void readUser(Patient patientIN) {// optiene objeto de la BD
 
 		textName.setText(patientIN.getName());
 		textAddress.setText(patientIN.getAddress());
@@ -371,8 +339,9 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		formatWeight.setText(String.valueOf(patientIN.getWeight()));
 		formatHeigth.setText(String.valueOf(patientIN.getHeight()));
 		System.out.println("" + patientIN.getIdPerson());
-		setPatient(patientIN);//para guardar el ID
+		setPatient(patientIN);// para guardar el ID
 	}
+
 	public Patient updatePatient() {
 		Patient patient = new Patient();
 		patient.setAge(Integer.parseInt(formatAge.getText()));
@@ -388,7 +357,7 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		patient.setName(textName.getText());
 		patient.setWeight(Double.parseDouble(formatWeight.getText().replace(" ", "").replace(",", ".")));
 		patient.setIdnumber(Integer.parseInt(formatIdNumber.getText()));
-		patient.setIdPerson(getPatient().getIdPerson());//leer el actual ID
+		patient.setIdPerson(getPatient().getIdPerson());// leer el actual ID
 		return patient;
 	}
 
@@ -400,13 +369,13 @@ public class MenuPatients extends JFrame implements ActionListener, KeyListener,
 		}
 		if (e.getSource() == btnSerch) {
 			Patient patient = new Patient();
-			patient.setIdnumber(Integer.parseInt(formatSerch.getText()));//leer documento a busacr
+			patient.setIdnumber(Integer.parseInt(formatSerch.getText()));// leer documento a busacr
 			readUser(coordinator.serchPatient(patient));
 
 		}
 
-		if (e.getSource() == btnUpdate&& isCheckInput()) {
-			
+		if (e.getSource() == btnUpdate && isCheckInput()) {
+
 			Messags ansswer = coordinator.updatePatient(updatePatient());
 		}
 		if (e.getSource() == btnDelete) {

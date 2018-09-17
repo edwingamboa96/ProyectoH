@@ -2,8 +2,8 @@ package co.com.vass.controller;
 
 import co.com.vass.modelo.Logic;
 import co.com.vass.modelo.Logic.Messags;
-import co.com.vass.view.ViewMenu;
-import co.com.vass.view.MenuPatients;
+import co.com.vass.view.ViewMainMenu;
+import co.com.vass.view.ViewMenuPatients;
 import co.com.vass.view.ViewLogin;
 import co.com.vass.vo.Patient;
 import co.com.vass.vo.User;;
@@ -12,22 +12,22 @@ public class Coordinator {
 
 	private Logic logic;
 	private ViewLogin loginview;
-	private MenuPatients menuPatiens;
-	private ViewMenu mennu;
+	private ViewMenuPatients menuPatiens;
+	private ViewMainMenu mennu;
 
-	public ViewMenu getMennu() {
+	public ViewMainMenu getMennu() {
 		return mennu;
 	}
 
-	public void setMennu(ViewMenu mennu) {
+	public void setMennu(ViewMainMenu mennu) {
 		this.mennu = mennu;
 	}
 
-	public MenuPatients getMenuPatiens() {
+	public ViewMenuPatients getMenuPatiens() {
 		return menuPatiens;
 	}
 
-	public void setMenuPatiens(MenuPatients menuPatiens) {
+	public void setMenuPatiens(ViewMenuPatients menuPatiens) {
 		this.menuPatiens = menuPatiens;
 	}
 

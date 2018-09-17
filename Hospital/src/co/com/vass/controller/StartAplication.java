@@ -1,10 +1,6 @@
 package co.com.vass.controller;
 
-import javax.swing.text.MaskFormatter;
-
-import co.com.vass.dao.PatientDAO;
-import co.com.vass.view.MenuPatients;
-import co.com.vass.vo.Patient;
+import co.com.vass.view.ViewDoctor;
 
 public class StartAplication {
 
@@ -13,6 +9,9 @@ public class StartAplication {
 
 		SetupApplication setupApplication = new SetupApplication();
 		setupApplication.startSystem();
+		
+//		ViewDoctor viewdoctor=new ViewDoctor();
+//		viewdoctor.setVisible(true);
 
 //	Patient pa=new Patient();
 //	pa.setIdPerson(21);
