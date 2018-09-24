@@ -6,10 +6,17 @@ import java.awt.Rectangle;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.event.MenuEvent;
 import javax.swing.event.MenuListener;
+
+import co.com.vass.controller.Coordinator;
+import co.com.vass.vo.Speciality;
+
 import javax.swing.JLabel;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -23,16 +30,17 @@ public class ViewMainMenu extends JFrame implements ActionListener {
 
 	private JMenuItem patienItem;
 	private JMenuItem doctorItem;
-	private JMenuItem especialityItem;
 	private JMenuItem roomsItem;
 	private JMenuItem historyItem;
+	private JMenuItem citasItem;
 
 	private ViewMenuPatients viewPatiens;
 	private ViewDoctor viewDoctor;
-	private ViewEspeciality viewEspeciality;
+	private ViewSpeciality viewEspeciality;
 	private ViewClinicalHistory viewClinicalHistory;
 	private ViewRooms viewRooms;
-	
+	private ViewAppoiment  viewAppoiment;
+	private Coordinator coordinator;
 
 	public ViewMainMenu() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -55,44 +63,43 @@ public class ViewMainMenu extends JFrame implements ActionListener {
 		menuPatients.setIcon(new ImageIcon(ViewMainMenu.class.getResource("/co/com/vass/resources/patients.png")));
 		menuPatients.add(patienItem);
 
-		JMenu menuDoctors = new JMenu("Medicos");//menu
-		doctorItem = new JMenuItem("Registrar medico");// Sub menu		
+		JMenu menuDoctors = new JMenu("Medicos");// menu
+		doctorItem = new JMenuItem("Registrar medico");// Sub menu
 		doctorItem.addActionListener(this);
 		menuDoctors.setIcon(new ImageIcon(ViewMainMenu.class.getResource("/co/com/vass/resources/doctor.png")));
 		menuDoctors.add(doctorItem);
-		
+
 		JMenu mnCuartos = new JMenu("Cuartos");
 		roomsItem = new JMenuItem("Registrar curto");// Sub menu
-		mnCuartos.setIcon(new ImageIcon(ViewMainMenu.class.getResource("/co/com/vass/resources/bedroom.png")));			
+		mnCuartos.setIcon(new ImageIcon(ViewMainMenu.class.getResource("/co/com/vass/resources/bedroom.png")));
 		roomsItem.addActionListener(this);
 		mnCuartos.add(roomsItem);
-		
+
 		JMenu mnHistoriaClinica = new JMenu("Historia clinica");
 		historyItem = new JMenuItem("Historia clinica");// Sub menu
-		mnHistoriaClinica.setIcon(new ImageIcon(ViewMainMenu.class.getResource("/co/com/vass/resources/medicalhistory.jpg")));
+		mnHistoriaClinica
+				.setIcon(new ImageIcon(ViewMainMenu.class.getResource("/co/com/vass/resources/medicalhistory.jpg")));
 		historyItem.addActionListener(this);
 		mnHistoriaClinica.add(historyItem);
-		
-		
-		JMenu mnEspeciality = new JMenu("Especilidades");
-		mnEspeciality.setIcon(new ImageIcon(ViewMainMenu.class.getResource("/co/com/vass/resources/medicalspeciality.png")));
-		especialityItem = new JMenuItem("especialidades");// Sub menu
-		
-		especialityItem.addActionListener(this);
-		mnEspeciality.add(especialityItem);
-		
 		menuBar.add(menuPatients);
 		menuBar.add(menuDoctors);
 		menuBar.add(mnCuartos);
 		menuBar.add(mnHistoriaClinica);
-        menuBar.add(mnEspeciality); 
 		
+				JMenu mnCitas = new JMenu("Historia clinica");
+				citasItem = new JMenuItem("Citas Medicos");
+				mnCitas.setIcon(new ImageIcon(ViewMainMenu.class.getResource("/co/com/vass/resources/calendar.png")));
+				citasItem.addActionListener(this);
+				mnCitas.add(citasItem);
+				
+						menuBar.add(mnCitas);
+
 		JPanel central = new JPanel();
 		getContentPane().add(central, BorderLayout.CENTER);
 		central.setLayout(null);
 
 		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setBounds(216, 0, 1340, 674);
+		lblNewLabel_1.setBounds(218, 0, 1340, 674);
 		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\edwin.gamboa\\Desktop\\fondo.png"));
 		central.add(lblNewLabel_1);
 
@@ -106,11 +113,11 @@ public class ViewMainMenu extends JFrame implements ActionListener {
 		this.viewDoctor = viewDoctor;
 	}
 
-	public ViewEspeciality getViewEspeciality() {
+	public ViewSpeciality getViewEspeciality() {
 		return viewEspeciality;
 	}
 
-	public void setViewEspeciality(ViewEspeciality viewEspeciality) {
+	public void setViewEspeciality(ViewSpeciality viewEspeciality) {
 		this.viewEspeciality = viewEspeciality;
 	}
 
@@ -138,13 +145,32 @@ public class ViewMainMenu extends JFrame implements ActionListener {
 		this.viewPatiens = viewPatiens;
 	}
 
+	public Coordinator getCoordinator() {
+		return coordinator;
+	}
+
+	public void setCoordinator(Coordinator coordinator) {
+		this.coordinator = coordinator;
+	}
+	
+
+	public ViewAppoiment getvIewApoiment() {
+		return viewAppoiment;
+	}
+
+	public void setviewApoiment(ViewAppoiment viewAppoiment) {
+		this.viewAppoiment = viewAppoiment;
+	}
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
+
 		if (e.getSource() == patienItem) {
 			getViewPatiens().setVisible(true);
 
 		}
 		if (e.getSource() == doctorItem) {
+
 			getViewDoctor().setVisible(true);
 
 		}
@@ -156,8 +182,8 @@ public class ViewMainMenu extends JFrame implements ActionListener {
 			getViewClinicalHistory().setVisible(true);
 
 		}
-		if (e.getSource() == especialityItem) {
-			getViewEspeciality().setVisible(true);
+		if (e.getSource() == citasItem) {
+			getvIewApoiment().setVisible(true);
 
 		}
 

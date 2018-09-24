@@ -9,6 +9,7 @@ import org.hibernate.criterion.Restrictions;
 
 import co.com.vass.baseclass.ConectionDAO;
 import co.com.vass.baseclass.ICRUD;
+import co.com.vass.vo.Doctor;
 import co.com.vass.vo.Patient;
 import co.com.vass.vo.Person;
 
@@ -54,11 +55,11 @@ public class PatientDAO extends ConectionDAO {
 	public boolean deletePatien(Patient patientIN) {
 		session.beginTransaction();
 		
-		Patient object =session.get(Patient.class, patientIN.getIdPerson());
+		//Patient object =session.get(Patient.class, patientIN.getIdPerson());**
 //		Query theStudents = session.createQuery(" from Patient where document=" + "'" + patientIN.getDocument() + "'");
 //		object = (Patient) theStudents.uniqueResult();
 		
-		session.delete(object);
+		//session.delete(object);**
 		session.getTransaction().commit();
 		boolean isUser = false;
 		return isUser;
@@ -71,5 +72,7 @@ public class PatientDAO extends ConectionDAO {
 		boolean isUser = false;
 		return isUser;
 	}
+
+	
 
 }

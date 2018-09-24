@@ -13,21 +13,22 @@ import javax.persistence.Table;
 import javax.persistence.TableGenerator;
 
 @MappedSuperclass
-@Table (name =  "person"  )
+//@Table (name =  "person"  )
 @Inheritance (strategy=InheritanceType.TABLE_PER_CLASS )
 public class Person  {
 	
 	
-	@Id  
+	//@Id  
 	//@GeneratedValue(strategy=GenerationType.AUTO)  	      
-	@Column(name = "idperson")  
-	private int idPerson;
+//	@Column(name = "idperson")  
+//	private int idPerson;
 	
 	@Column(name="name")
 	private String name;
 	
-//	@Column(name="position")
-//	private String position;
+	@Column(name="lastname")
+	private String lastname;
+
 	
 	@Column(name="document")
 	private String document;
@@ -54,12 +55,12 @@ public class Person  {
 	@Column(name="idnumber")
 	private int idnumber;
 	 
-	public int getIdPerson() {
-		return idPerson;
-	}
-	public void setIdPerson(int idPerson) {
-		this.idPerson = idPerson;
-	}
+//	public int getIdPerson() {
+//		return idPerson;
+//	}
+//	public void setIdPerson(int idPerson) {
+//		this.idPerson = idPerson;
+//	}
 	
 	public String getName() {
 		return name;
@@ -128,6 +129,12 @@ public class Person  {
 	}
 	public void setIdnumber(int idnumber) {
 		this.idnumber = idnumber;
+	}
+	public String getLastname() {
+		return lastname;
+	}
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
 	} 
 	
 	

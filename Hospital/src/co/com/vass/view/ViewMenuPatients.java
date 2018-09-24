@@ -38,7 +38,7 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 	private JTextField textName;
 	private JTextField textAddress;
 	private JTextField textPhone;
-	private JComboBox spnDocument;
+	private JComboBox comboDocument;
 	private JTextField textDiagnostic;
 	private JTextField textJob;
 	private JTextField textEmail;
@@ -107,23 +107,23 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		panel.add(centro, BorderLayout.CENTER);
 
 		JLabel lblNewLabel = new JLabel("Nombre");
-		lblNewLabel.setBounds(35, 31, 46, 14);
+		lblNewLabel.setBounds(10, 31, 46, 14);
 
 		textName = new JTextField();
 		textName.setBounds(92, 28, 86, 20);
 		textName.setColumns(10);
 
-		JLabel lblNewLabel_1 = new JLabel("documento");
-		lblNewLabel_1.setBounds(35, 62, 53, 14);
+		JLabel lblNewLabel_1 = new JLabel(" no. documento");
+		lblNewLabel_1.setBounds(10, 62, 86, 14);
 
 		JLabel lblNewLabel_2 = new JLabel("Direccion");
-		lblNewLabel_2.setBounds(35, 118, 46, 14);
+		lblNewLabel_2.setBounds(10, 118, 46, 14);
 
 		JLabel lblTelefono = new JLabel("Telefono");
-		lblTelefono.setBounds(35, 144, 46, 14);
+		lblTelefono.setBounds(10, 144, 46, 14);
 
 		JLabel lblEdad = new JLabel("Edad");
-		lblEdad.setBounds(35, 88, 46, 14);
+		lblEdad.setBounds(10, 93, 46, 14);
 
 		JLabel lblGenero = new JLabel("Sexo");
 		lblGenero.setBounds(330, 31, 46, 14);
@@ -139,13 +139,13 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		//String genero[] = { "hombre", "mujer" };
 		String documentType[] = { "cedula", "pasaporte", "targeta identidad" };
 
-		spnDocument = new JComboBox(documentType);
+		comboDocument = new JComboBox(documentType);
 
-		spnDocument.setBounds(92, 59, 80, 20);
+		comboDocument.setBounds(192, 59, 80, 20);
 		centro.setLayout(null);
 		centro.add(textAddress);
 		centro.add(textPhone);
-		centro.add(spnDocument);
+		centro.add(comboDocument);
 		centro.add(lblNewLabel);
 		centro.add(textName);
 		centro.add(lblTelefono);
@@ -155,7 +155,7 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		centro.add(lblEdad);
 
 		JLabel lblPeso = new JLabel("Peso");
-		lblPeso.setBounds(330, 62, 46, 14);
+		lblPeso.setBounds(313, 62, 46, 14);
 		centro.add(lblPeso);
 		buttonGroup = new ButtonGroup();
 		rdbtnHombre = new JRadioButton("Hombre");
@@ -177,7 +177,7 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		buttonGroup.add(rdbtnMujer);
 
 		JLabel lblNewLabel_3 = new JLabel("Diagnostico");
-		lblNewLabel_3.setBounds(302, 88, 63, 14);
+		lblNewLabel_3.setBounds(313, 93, 63, 14);
 		centro.add(lblNewLabel_3);
 
 		textDiagnostic = new JTextField();
@@ -190,7 +190,7 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		centro.add(lblNewLabel_4);
 
 		JLabel lblTrabajo = new JLabel("Trabajo");
-		lblTrabajo.setBounds(35, 169, 46, 14);
+		lblTrabajo.setBounds(10, 169, 46, 14);
 		centro.add(lblTrabajo);
 
 		textJob = new JTextField();
@@ -199,20 +199,20 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		textJob.setColumns(10);
 
 		JLabel lblCorreo = new JLabel("Correo");
-		lblCorreo.setBounds(319, 160, 46, 14);
+		lblCorreo.setBounds(313, 144, 46, 14);
 		centro.add(lblCorreo);
 
 		textEmail = new JTextField();
-		textEmail.setBounds(375, 160, 86, 20);
+		textEmail.setBounds(375, 141, 86, 20);
 		centro.add(textEmail);
 		textEmail.setColumns(10);
 
 		JLabel lblNacionalidad = new JLabel("Nacionalidad");
-		lblNacionalidad.setBounds(302, 194, 74, 14);
+		lblNacionalidad.setBounds(313, 178, 74, 14);
 		centro.add(lblNacionalidad);
 
 		textNatiolaty = new JTextField();
-		textNatiolaty.setBounds(375, 191, 86, 20);
+		textNatiolaty.setBounds(375, 172, 86, 20);
 		centro.add(textNatiolaty);
 		textNatiolaty.setColumns(10);
 		formatDelete = new JFormattedTextField();
@@ -258,7 +258,7 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		formatSerch.setBounds(92, 214, 86, 20);
 		centro.add(formatSerch);
 
-		formatIdNumber.setBounds(183, 59, 70, 20);
+		formatIdNumber.setBounds(92, 59, 86, 20);
 		centro.add(formatIdNumber);
 
 		JLabel lblNewLabel_5 = new JLabel("BUSCAR");
@@ -316,7 +316,7 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		patient.setEmail(textEmail.getText());
 		patient.setJob(textJob.getText());
 		patient.setNationality(textNatiolaty.getText());
-		patient.setDocument(spnDocument.getSelectedItem().toString());
+		patient.setDocument(comboDocument.getSelectedItem().toString());
 		patient.setGender(getGener());
 		patient.setName(textName.getText());
 		patient.setWeight(Double.parseDouble(formatWeight.getText().replace(" ", "").replace(",", ".")));
@@ -330,7 +330,7 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		textName.setText(patientIN.getName());
 		textAddress.setText(patientIN.getAddress());
 		textPhone.setText(patientIN.getPhone());
-		spnDocument.setSelectedItem(patientIN.getDocument());
+		comboDocument.setSelectedItem(patientIN.getDocument());
 		textDiagnostic.setText(patientIN.getDiagnostic());
 		textJob.setText(patientIN.getJob());
 		textEmail.setText(patientIN.getEmail());
@@ -338,7 +338,7 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		formatAge.setText(String.valueOf(patientIN.getAge()));
 		formatWeight.setText(String.valueOf(patientIN.getWeight()));
 		formatHeigth.setText(String.valueOf(patientIN.getHeight()));
-		System.out.println("" + patientIN.getIdPerson());
+	
 		setPatient(patientIN);// para guardar el ID
 	}
 
@@ -352,12 +352,12 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		patient.setEmail(textEmail.getText());
 		patient.setJob(textJob.getText());
 		patient.setNationality(textNatiolaty.getText());
-		patient.setDocument(spnDocument.getSelectedItem().toString());
+		patient.setDocument(comboDocument.getSelectedItem().toString());
 		patient.setGender(getGener());
 		patient.setName(textName.getText());
 		patient.setWeight(Double.parseDouble(formatWeight.getText().replace(" ", "").replace(",", ".")));
 		patient.setIdnumber(Integer.parseInt(formatIdNumber.getText()));
-		patient.setIdPerson(getPatient().getIdPerson());// leer el actual ID
+	//	patient.setIdPerson(getPatient().getIdPerson());// leer el actual ID
 		return patient;
 	}
 

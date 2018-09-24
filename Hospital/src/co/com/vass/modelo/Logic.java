@@ -1,9 +1,16 @@
 package co.com.vass.modelo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import co.com.vass.controller.Coordinator;
+import co.com.vass.dao.DoctorDAO;
 import co.com.vass.dao.PatientDAO;
+import co.com.vass.dao.SpecialityDAO;
 import co.com.vass.dao.UserDAO;
+import co.com.vass.vo.Doctor;
 import co.com.vass.vo.Patient;
+import co.com.vass.vo.Speciality;
 import co.com.vass.vo.User;
 
 public class Logic {
@@ -89,7 +96,8 @@ public class Logic {
 
 		return answer;
 	}
-
+/////////////////////
+//	PATIENT
 	public Messags savePatient(Patient patient) {
 		Messags result = Messags.ADD_PATIENT_OK;
 		PatientDAO patientDAO = new PatientDAO();
@@ -119,30 +127,66 @@ public class Logic {
 
 		return result;
 	}
+	
+	///////////////////////////////////////////
+	//DOCTOR
+	public Messags saveDoctor(Doctor doctor) {
+		Messags result = Messags.ADD_PATIENT_OK;
+		DoctorDAO doctortDAO = new DoctorDAO();
+		doctortDAO.createDoctor(doctor);
+		return result;
+	}
 
-//	public Messags validatePatient(Patient patient) {
-//		
-//
-//		
-//		boolean validation = true;
-//		Messags result;
-//		String name = usuario.getName();
-//		String password = usuario.getPassword();
-//		if (usuario.getName().equals("") || usuario.getPassword().equals("")) {
-//			validation = false;
-//		}
-//		if (name == null || password == null) {
-//			validation = false;
-//		}
-//
-//		if (validation) {
-//			return result = checkUserBD(usuario);
-//
-//		} else {
-//
-//			return Messags.CAMPOS;
-//		}
-//
-//	}
+	public Doctor searchDoctor(Doctor doctortSerch) {
+		Messags result = Messags.ADD_PATIENT_OK;
+		DoctorDAO doctortDAO = new DoctorDAO();
+		return doctortDAO.readDoctor(doctortSerch);
+
+	}
+	public List searchDoctor() {
+		DoctorDAO doctor =new DoctorDAO();
+		return doctor.doctorSearch();
+		
+	}
+
+	public Messags updateDoctor(Doctor doctor) {
+		Messags result = Messags.ADD_PATIENT_OK;
+		DoctorDAO doctortDAO = new DoctorDAO();
+		doctortDAO.updateDoctor(doctor);
+
+		return result;
+	}
+
+	public Messags deleteDoctor(Doctor doctor) {
+		Messags result = Messags.ADD_PATIENT_OK;
+		DoctorDAO doctortDAO = new DoctorDAO();
+		doctortDAO.deleteDoctor(doctor);
+
+
+		return result;
+	}
+    
+/////////////////////////////////////////////
+	
+//Speciality
+	public Messags saveSpeciality(Speciality speciality) {
+		Messags result = Messags.ADD_PATIENT_OK;
+		SpecialityDAO specialityDAO = new SpecialityDAO();
+		specialityDAO.createSpeciality(speciality);
+		return result;
+		
+	}
+
+	public List searchSpecility() {
+		SpecialityDAO specialityDAO = new SpecialityDAO();		
+		return specialityDAO.searchSpecility();
+	}
+	
+	
+	
+	
+	
+	
+///
 
 }

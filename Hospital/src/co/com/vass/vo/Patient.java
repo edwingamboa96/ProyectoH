@@ -3,9 +3,20 @@ import java.util.ArrayList;
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Parameter;
 
 
 
@@ -14,7 +25,7 @@ import javax.persistence.Table;
 @AttributeOverrides({  
    
     @AttributeOverride(name="name", column=@Column(name="name")),  
-   // @AttributeOverride(name="position", column=@Column(name="position")),
+    @AttributeOverride(name="lastname", column=@Column(name="lastname")),
     @AttributeOverride(name="document", column=@Column(name="document"))  ,
     @AttributeOverride(name="age", column=@Column(name="age"))  ,
     @AttributeOverride(name="nationality", column=@Column(name="nationality"))  ,
@@ -28,7 +39,10 @@ import javax.persistence.Table;
 })  
 
 public class Patient extends Person  {
-	//co.com.vass.vo.Patient
+	@Id  
+	@Column(name="idPatien")
+	
+	private int idPatien;
 	private String diagnostic;
 	private double height;
 	private double weight;
@@ -36,7 +50,9 @@ public class Patient extends Person  {
 	private String job;
 	//private String affliction;
 	
-	
+	@OneToOne(cascade = CascadeType.ALL, mappedBy = "patient", fetch = FetchType.LAZY)
+	  @Fetch(FetchMode.SELECT)
+	private Appointment patient;
 	
 	public Patient() {
 		super();
@@ -85,6 +101,19 @@ public class Patient extends Person  {
 //	public void setAffliction(String affliction) {
 //		this.affliction = affliction;
 //	}
+	public int getIdPatien() {
+		return idPatien;
+	}
+	public void setIdPatien(int idPatien) {
+		this.idPatien = idPatien;
+	}
+	public Appointment getPatient() {
+		return patient;
+	}
+	public void setPatient(Appointment patient) {
+		this.patient = patient;
+	}
+	
 	
 
 
