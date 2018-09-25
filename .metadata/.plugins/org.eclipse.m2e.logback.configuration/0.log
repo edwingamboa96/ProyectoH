@@ -1,0 +1,23 @@
+2018-09-21 16:15:12,848 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-21 20:06:48,193 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-22 16:09:14,635 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-09-22 16:09:15,001 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2018-09-23 08:41:00,124 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-23 22:50:52,951 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-24 08:17:20,589 [Worker-17: Loading available Gradle versions] INFO  o.e.b.c.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-24 08:31:37,954 [Worker-34: Downloading sources for jcalendar-1.4.jar] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/toedter/jcalendar/1.4/jcalendar-1.4-sources.jar
+2018-09-24 08:31:38,297 [Worker-34: Downloading sources for jcalendar-1.4.jar] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/toedter/jcalendar/1.4/jcalendar-1.4-sources.jar
+2018-09-24 13:12:42,338 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-09-24 14:09:03,096 [Thread-30] INFO  org.hibernate.cfg.Environment - Hibernate 3.3.2.GA
+2018-09-24 14:09:03,099 [Thread-30] INFO  org.hibernate.cfg.Environment - hibernate.properties not found
+2018-09-24 14:09:03,102 [Thread-30] INFO  org.hibernate.cfg.Environment - Bytecode provider name : javassist
+2018-09-24 14:09:03,105 [Thread-30] INFO  org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+2018-09-24 14:09:03,153 [Thread-30] INFO  org.hibernate.cfg.Configuration - configuring from file: hibernate.cfg.xml
+2018-09-24 18:12:24,108 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-24 19:02:53,671 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-24 23:48:06,381 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-25 00:24:24,772 [Worker-46: Downloading sources for log4j-1.2.15.jar] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15-sources.jar
+2018-09-25 00:24:25,727 [Worker-46: Downloading sources for log4j-1.2.15.jar] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15-sources.jar
+2018-09-25 08:19:56,591 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-25 12:24:52,981 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-09-25 12:27:37,748 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
