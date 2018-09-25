@@ -248,3 +248,1670 @@ java.io.IOException: El proceso no tiene acceso al archivo porque otro proceso t
 	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:239)
 	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:03:54.267
+!MESSAGE El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+!STACK 0
+java.io.IOException: El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:289)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:141)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:122)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:239)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:03:59.328
+!MESSAGE El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+!STACK 0
+java.io.IOException: El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:289)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:141)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:122)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:239)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:04:14.272
+!MESSAGE El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+!STACK 0
+java.io.IOException: El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:289)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:141)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:122)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:239)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:04:30.931
+!MESSAGE El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+!STACK 0
+java.io.IOException: El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:289)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:141)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:122)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:239)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:04:34.306
+!MESSAGE El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+!STACK 0
+java.io.IOException: El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:289)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:141)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:122)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:239)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:05:07.705
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\http-cache.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\http-cache.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:05:49.896
+!MESSAGE Deleting resource C:\gitHab\.metadata\.lock failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.lock
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:05:49.912
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.eclipse.rse.core\.log failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.eclipse.rse.core\.log
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:05:49.959
+!MESSAGE Deleting resources failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: Deleting resources failed. See log for details
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:119)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2018-09-25 13:05:49.959
+!MESSAGE Deleting resources failed. See log for details
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:05:59.113
+!MESSAGE Deleting resource C:\gitHab\.metadata\.lock failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.lock
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:05:59.113
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.eclipse.rse.core\.log failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.eclipse.rse.core\.log
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:05:59.175
+!MESSAGE Deleting resources failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: Deleting resources failed. See log for details
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:119)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2018-09-25 13:05:59.175
+!MESSAGE Deleting resources failed. See log for details
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:06:09.237
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:06:09.612
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\local-history.lucene60\_0.cfs failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\local-history.lucene60\_0.cfs
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:06:09.612
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.eclipse.epp.logging.aeri.ide.server\local-history.lucene60\_0.cfs failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.eclipse.epp.logging.aeri.ide.server\local-history.lucene60\_0.cfs
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:06:09.612
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.jboss.tools\local-history.lucene60\_0.cfs failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.jboss.tools\local-history.lucene60\_0.cfs
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:06:09.799
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.hibernate.eclipse\hibernate-tools.log failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.hibernate.eclipse\hibernate-tools.log
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:06:09.893
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.eclipse.jdt.core\index.db failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.eclipse.jdt.core\index.db
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:06:10.627
+!MESSAGE Deleting resources failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: Deleting resources failed. See log for details
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:119)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2018-09-25 13:06:10.627
+!MESSAGE Deleting resources failed. See log for details
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:06:53.188
+!MESSAGE El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+!STACK 0
+java.io.IOException: El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:289)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:141)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:122)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:239)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:06:57.572
+!MESSAGE Deleting resource C:\gitHab\.metadata\.lock failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.lock
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:06:57.572
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.eclipse.rse.core\.log failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.eclipse.rse.core\.log
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:06:57.587
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:06:57.587
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\local-history.lucene60\_0.cfs failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\local-history.lucene60\_0.cfs
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:06:57.587
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.eclipse.epp.logging.aeri.ide.server\local-history.lucene60\_0.cfs failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.eclipse.epp.logging.aeri.ide.server\local-history.lucene60\_0.cfs
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:06:57.587
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.jboss.tools\local-history.lucene60\_0.cfs failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.jboss.tools\local-history.lucene60\_0.cfs
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:06:57.587
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.hibernate.eclipse\hibernate-tools.log failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.hibernate.eclipse\hibernate-tools.log
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:06:57.587
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.eclipse.jdt.core\index.db failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.eclipse.jdt.core\index.db
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:06:57.666
+!MESSAGE Deleting resources failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: Deleting resources failed. See log for details
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:119)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2018-09-25 13:06:57.666
+!MESSAGE Deleting resources failed. See log for details
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:07:08.017
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.eclipse.epp.logging.aeri.ide.server\http-cache.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.eclipse.epp.logging.aeri.ide.server\http-cache.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:07:24.199
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\http-cache.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\http-cache.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:07:27.895
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\http-cache.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\http-cache.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:07:32.440
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\local-history.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\local-history.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:07:41.529
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.eclipse.epp.logging.aeri.ide.server\http-cache.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.eclipse.epp.logging.aeri.ide.server\http-cache.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:07:47.426
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.eclipse.epp.logging.aeri.ide.server\local-history.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.eclipse.epp.logging.aeri.ide.server\local-history.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:07:53.928
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.eclipse.epp.logging.aeri.ide.server\local-history.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.eclipse.epp.logging.aeri.ide.server\local-history.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:08:00.392
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\local-history.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\local-history.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:08:24.936
+!MESSAGE Deleting resource C:\gitHab\.metadata\.lock failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.lock
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:08:24.983
+!MESSAGE Deleting resources failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: Deleting resources failed. See log for details
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:119)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2018-09-25 13:08:24.983
+!MESSAGE Deleting resources failed. See log for details
+
+!ENTRY org.eclipse.egit.core 4 0 2018-09-25 13:08:40.002
+!MESSAGE Deleting resource C:\gitHab\.metadata\.plugins\org.eclipse.jdt.core\index.db failed.
+!STACK 0
+java.io.IOException: Could not delete file C:\gitHab\.metadata\.plugins\org.eclipse.jdt.core\index.db
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:217)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:08:40.049
+!MESSAGE Deleting resources failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: Deleting resources failed. See log for details
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:119)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2289)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.runNonWorkspaceAction(DeletePathsOperationUI.java:81)
+	at org.eclipse.egit.ui.internal.operations.DeletePathsOperationUI.run(DeletePathsOperationUI.java:60)
+	at org.eclipse.egit.ui.internal.staging.StagingView$DeleteAction.run(StagingView.java:3155)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2018-09-25 13:08:40.049
+!MESSAGE Deleting resources failed. See log for details
+
+!ENTRY org.eclipse.lsp4e 1 0 2018-09-25 13:08:46.765
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2018-09-25 13:08:46.765
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2018-09-25 13:08:46.921
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2018-09-25 13:08:46.921
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2018-09-25 13:08:47.593
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2018-09-25 13:08:47.593
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2018-09-25 13:08:52.327
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2018-09-25 13:08:52.327
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2018-09-25 13:08:52.359
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2018-09-25 13:08:52.359
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:09:00.854
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\http-cache.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\http-cache.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:09:06.420
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.jboss.tools\local-history.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.jboss.tools\local-history.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:09:13.803
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.jboss.tools\local-history.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.jboss.tools\local-history.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:09:19.567
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.jboss.tools\http-cache.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.jboss.tools\http-cache.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:09:21.926
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\http-cache.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\http-cache.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:09:47.509
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\http-cache.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\com.liferay.ide.error.server\http-cache.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:09:52.290
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.jboss.tools\local-history.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.jboss.tools\local-history.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:09:57.533
+!MESSAGE C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.jboss.tools\local-history.lucene60\write.lock (Acceso denegado)
+!STACK 0
+java.io.FileNotFoundException: C:\gitHab\.metadata\.plugins\org.eclipse.epp.logging.aeri.ide\org.jboss.tools\local-history.lucene60\write.lock (Acceso denegado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:417)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:629)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:232)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-25 13:11:13.881
+!MESSAGE El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+!STACK 0
+java.io.IOException: El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:289)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:141)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:122)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:239)
+	at org.eclipse.egit.ui.internal.staging.StagingView$53.run(StagingView.java:3394)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SESSION 2018-09-25 13:11:26.605 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data file:/C:/gitHab/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 2 0 2018-09-25 13:11:32.306
+!MESSAGE Builtin LFS support not present/detected
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be found by org.eclipse.egit.core_5.0.0.201806131550-r
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:508)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.eclipse.egit.core.Activator.registerBuiltinLFS(Activator.java:279)
+	at org.eclipse.egit.core.Activator.start(Activator.java:212)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:454)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.egit.ui.Activator$RepositoryChangeScanner.<init>(Activator.java:921)
+	at org.eclipse.egit.ui.Activator.setupRepoChangeScanner(Activator.java:1034)
+	at org.eclipse.egit.ui.Activator.start(Activator.java:336)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:470)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:609)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:177)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:931)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:60)
+	at org.eclipse.ui.internal.services.WorkbenchServiceRegistry.getSourceProviders(WorkbenchServiceRegistry.java:174)
+	at org.eclipse.ui.internal.services.SourceProviderService.readRegistry(SourceProviderService.java:104)
+	at org.eclipse.ui.internal.Workbench$34.runWithException(Workbench.java:2378)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:95)
+	at org.eclipse.ui.internal.Workbench.initializeDefaultServices(Workbench.java:2373)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1654)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2859)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.jface 2 0 2018-09-25 13:11:34.592
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-09-25 13:11:34.592
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@35eb95d3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@cdf3815,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-09-25 13:11:34.592
+!MESSAGE A conflict occurred for CTRL+SHIFT+M:
+Binding(CTRL+SHIFT+M,
+	ParameterizedCommand(Command(bndtools.workspace.openMainConfig,Open main bnd config,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c320c8b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+M,
+	ParameterizedCommand(Command(org.jboss.tools.jmx.ui.navigate.open.mbean,Open MBean,
+		Open an MBean in an MBean editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4d23b242,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-09-25 13:11:34.592
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(bndtools.runEditor.resolve,Resolve Run Bundles,
+		Resolve Run Bundles,
+		Category(bndtools.runEditor,Run Editor Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@240fe338,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.jboss.tools.jmx.ui.navigate.refresh,Refresh,
+		Refreshes the tree,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5165783c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.lsp4e 1 0 2018-09-25 13:11:40.956
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2018-09-25 13:11:40.956
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-25 13:11:43.157
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\edwin.gamboa'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.jaspersoft.studio 1 0 2018-09-25 13:11:58.661
+!MESSAGE Starting JaspersoftStudio bundle - Version: 6.6.0.final
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2018-09-25 13:12:09.147
+!MESSAGE starting IvyDE plugin
+
+!ENTRY org.apache.ivyde.eclipse 1 0 2018-09-25 13:12:09.173
+!MESSAGE IvyDE plugin started
