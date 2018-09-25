@@ -11,7 +11,7 @@ import co.com.vass.dao.DoctorDAO;
 import co.com.vass.dao.PatientDAO;
 import co.com.vass.dao.SpecialityDAO;
 import co.com.vass.view.ViewSelecSpeciality;
-
+import co.com.vass.view.ReportsAppoiment;
 import co.com.vass.view.ViewDoctor;
 import co.com.vass.vo.Appointment;
 import co.com.vass.vo.Doctor;
