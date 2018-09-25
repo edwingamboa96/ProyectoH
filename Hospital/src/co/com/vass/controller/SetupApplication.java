@@ -1,6 +1,6 @@
 package co.com.vass.controller;
 
-import co.com.vass.modelo.Logic;
+import co.com.vass.modelo.ControllerDAO;
 import co.com.vass.view.ViewMenuPatients;
 import co.com.vass.view.ViewRooms;
 import co.com.vass.view.ViewSpeciality;
@@ -21,10 +21,10 @@ public class SetupApplication {
 	
 		ViewSpeciality viewSpeciality = new ViewSpeciality();
 		ViewRooms viewRooms = new ViewRooms();
-		ViewAppoiment viewAppoiment=new ViewAppoiment();
+	
 		
 		Patient patient = new Patient();
-		Logic logic = new Logic();
+		ControllerDAO logic = new ControllerDAO();
 		
 		Coordinator coordinator = new Coordinator();
 		coordinator.setLogic(logic);
@@ -37,13 +37,14 @@ public class SetupApplication {
 		viewMainMenu.setViewPatiens(menuPatients);
 		viewMainMenu.setViewClinicalHistory(viewClinicalHistory);
 		viewMainMenu.setViewRooms(viewRooms);
+		ViewAppoiment viewAppoiment=new ViewAppoiment(coordinator.searchSpecility());
 		viewMainMenu.setviewApoiment(viewAppoiment);
 		ViewDoctor viewDoctor = new ViewDoctor(coordinator.searchSpecility());
 		viewDoctor.setCoordinator(coordinator);
 		viewMainMenu.setViewDoctor(viewDoctor);
 		viewMainMenu.setViewEspeciality(viewSpeciality);
 		viewMainMenu.setCoordinator(coordinator);
-		
+		viewAppoiment.setCoordinator(coordinator);
 
 		// coordinator.setMenuPatiens(menuPatients);
 

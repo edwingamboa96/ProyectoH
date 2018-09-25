@@ -86,7 +86,7 @@ public class ViewMainMenu extends JFrame implements ActionListener {
 		menuBar.add(mnCuartos);
 		menuBar.add(mnHistoriaClinica);
 		
-				JMenu mnCitas = new JMenu("Historia clinica");
+				JMenu mnCitas = new JMenu("Citas");
 				citasItem = new JMenuItem("Citas Medicos");
 				mnCitas.setIcon(new ImageIcon(ViewMainMenu.class.getResource("/co/com/vass/resources/calendar.png")));
 				citasItem.addActionListener(this);

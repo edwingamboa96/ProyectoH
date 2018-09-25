@@ -11,7 +11,7 @@ import javax.swing.border.EmptyBorder;
 
 import co.com.vass.controller.Coordinator;
 import co.com.vass.dao.UserDAO;
-import co.com.vass.modelo.Logic.Messags;
+import co.com.vass.modelo.ControllerDAO.Messags;
 import co.com.vass.vo.User;
 
 import java.awt.Color;

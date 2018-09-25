@@ -7,7 +7,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import co.com.vass.controller.Coordinator;
-import co.com.vass.modelo.Logic.Messags;
+import co.com.vass.modelo.ControllerDAO.Messags;
 import co.com.vass.vo.Doctor;
 import co.com.vass.vo.Patient;
 import co.com.vass.vo.Speciality;
@@ -67,7 +67,8 @@ public class ViewDoctor extends JFrame implements ActionListener {
 	private Set<Speciality> list_speciality;
 	private Set<Speciality> list_select;
 	JFormattedTextField formatSearch;
-	private static final String[] coreList = {};
+	private      JButton btnUpdate;
+	//private static final String[] coreList = {};
 //Coordinator coordinator
 
 	public ViewDoctor(List<Speciality> specialitiesIN) {
@@ -96,11 +97,13 @@ public class ViewDoctor extends JFrame implements ActionListener {
 
 		btnDelete.setBounds(180, 245, 136, 51);
 		btnDelete.setIcon(new ImageIcon(ViewDoctor.class.getResource("/co/com/vass/resources/delete.png")));
+		btnDelete.addActionListener(this);
 		panelDoctor.add(btnDelete);
 
-		JButton btnUpdate = new JButton("Actualizar");
+		 btnUpdate = new JButton("Actualizar");
 		btnUpdate.setBounds(326, 249, 149, 51);
 		btnUpdate.setIcon(new ImageIcon(ViewDoctor.class.getResource("/co/com/vass/resources/save.png")));
+		btnUpdate.addActionListener(this);
 		panelDoctor.add(btnUpdate);
 
 		JLabel lblNewLabel = new JLabel("Nombre");
@@ -177,7 +180,7 @@ public class ViewDoctor extends JFrame implements ActionListener {
 		JLabel lblNewLabel_2 = new JLabel("Especialides");
 		scrollPane_1.setColumnHeaderView(lblNewLabel_2);
 
-		listSpeciality = new JList(coreList);
+		listSpeciality = new JList();
 		listSpeciality.setVisibleRowCount(3);
 		listSpeciality.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
 		scrollPane_1.setViewportView(listSpeciality);
@@ -226,6 +229,10 @@ public class ViewDoctor extends JFrame implements ActionListener {
 		panelSpecility.add(btnDeleteSpecility);
 
 		btnUpDateSpeciality = new JButton("ACTUALIZAR");
+		btnUpDateSpeciality.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnUpDateSpeciality.setBounds(302, 122, 99, 23);
 		panelSpecility.add(btnUpDateSpeciality);
 
@@ -351,6 +358,14 @@ public class ViewDoctor extends JFrame implements ActionListener {
 		if (e.getSource() == btnAddSpecility) {
 
 			loadSpeciality();
+
+		}
+		if (e.getSource() == btnUpdate) {
+                 Doctor doctor=new Doctor();
+                 doctor.setIdDoctor(45);
+                 doctor.setAddress("calle falsa 123");
+                 
+			coordinator.updateDoctor(doctor);
 
 		}
 		if (e.getSource() == btnSelectdSpeciality) {

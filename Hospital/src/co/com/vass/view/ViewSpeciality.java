@@ -12,7 +12,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 import co.com.vass.controller.Coordinator;
-import co.com.vass.modelo.Logic.Messags;
+import co.com.vass.modelo.ControllerDAO.Messags;
 import co.com.vass.vo.Patient;
 import co.com.vass.vo.Speciality;
 

@@ -3,11 +3,12 @@ package co.com.vass.controller;
 import java.util.ArrayList;
 import java.util.List;
 
-import co.com.vass.modelo.Logic;
-import co.com.vass.modelo.Logic.Messags;
+import co.com.vass.modelo.ControllerDAO;
+import co.com.vass.modelo.ControllerDAO.Messags;
 import co.com.vass.view.ViewMainMenu;
 import co.com.vass.view.ViewMenuPatients;
 import co.com.vass.view.ViewLogin;
+import co.com.vass.vo.Appointment;
 import co.com.vass.vo.Doctor;
 import co.com.vass.vo.Patient;
 import co.com.vass.vo.Speciality;
@@ -15,7 +16,7 @@ import co.com.vass.vo.User;;
 
 public class Coordinator {
 
-	private Logic logic;
+	private ControllerDAO controllerDAO;
 	private ViewLogin loginview;
 	private ViewMenuPatients menuPatiens;
 	private ViewMainMenu mennu;
@@ -40,8 +41,8 @@ public class Coordinator {
 //		return logic;
 //	}
 
-	public void setLogic(Logic logic) {
-		this.logic = logic;
+	public void setLogic(ControllerDAO logic) {
+		this.controllerDAO = logic;
 	}
 
 //	public ViewLogin getLoginview() {
@@ -54,51 +55,51 @@ public class Coordinator {
 
 	public Messags validateLogin(User usuario) {
 
-		return logic.validateLogin(usuario);
+		return controllerDAO.validateLogin(usuario);
 	}
 
 //////////////PATIENT
 	public Messags savePatient(Patient patient) {
-		return logic.savePatient(patient);
+		return controllerDAO.savePatient(patient);
 
 	}
 
 	public Patient serchPatient(Patient patient) {
-		return logic.serchPatient(patient);
+		return controllerDAO.serchPatient(patient);
 
 	}
 
 	public Messags updatePatient(Patient patient) {
-		return logic.updatePatient(patient);
+		return controllerDAO.updatePatient(patient);
 
 	}
 
 	public Messags deletePatient(Patient doctor) {
-		return logic.deletePatient(doctor);
+		return controllerDAO.deletePatient(doctor);
 
 	}
 
 	////////////////////////////// DOCTOR
 	public Messags saveDoctor(Doctor doctor) {
-		return logic.saveDoctor(doctor);
+		return controllerDAO.saveDoctor(doctor);
 
 	}
 
 	public Doctor serchDoctor(Doctor doctor) {
-		return logic.searchDoctor(doctor);
+		return controllerDAO.searchDoctor(doctor);
 
 	}
 	public List serchDoctor() {
-		return logic.searchDoctor();
+		return controllerDAO.searchDoctor();
 
 	}
 	public Messags updateDoctor(Doctor doctor) {
-		return logic.updateDoctor(doctor);
+		return controllerDAO.updateDoctor(doctor);
 
 	}
 
 	public Messags deleteDoctor(Doctor doctor) {
-		return logic.deleteDoctor(doctor);
+		return controllerDAO.deleteDoctor(doctor);
 
 	}
 
@@ -118,14 +119,22 @@ public class Coordinator {
 	// Speciality
 
 	public Messags saveSpeciality(Speciality speciality) {
-		return logic.saveSpeciality(speciality);
+		return controllerDAO.saveSpeciality(speciality);
 
 	}
 
 	public List searchSpecility() {
-		return logic.searchSpecility();
+		return controllerDAO.searchSpecility();
 
 	}
 	
-
+	/////////////////////////
+	//Apoiment
+	
+	public Appointment saveAppoiment(Appointment appointment) {
+		return controllerDAO.saveAppoiment(appointment);
+	}
+	public Doctor searchDoctorfromSpeciality(Speciality speciality) {
+		return controllerDAO.searchDoctorfromSpeciality(speciality);
+	}
 }

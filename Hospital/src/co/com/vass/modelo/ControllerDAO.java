@@ -4,16 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 import co.com.vass.controller.Coordinator;
+import co.com.vass.dao.AppoimentDAO;
 import co.com.vass.dao.DoctorDAO;
 import co.com.vass.dao.PatientDAO;
 import co.com.vass.dao.SpecialityDAO;
 import co.com.vass.dao.UserDAO;
+import co.com.vass.vo.Appointment;
 import co.com.vass.vo.Doctor;
 import co.com.vass.vo.Patient;
 import co.com.vass.vo.Speciality;
 import co.com.vass.vo.User;
 
-public class Logic {
+public class ControllerDAO {
 	private Coordinator coordinator;
 	final int USUARIO = 1;
 	final int ADMINISTRADOR = 2;
@@ -54,7 +56,7 @@ public class Logic {
 		this.coordinator = coordinator;
 	}
 
-	public Messags validateLogin(User usuario) {// validar campos de entrada
+	public Messags validateLogin(User usuario) {
 		boolean validation = true;
 		Messags result;
 		String name = usuario.getName();
@@ -96,6 +98,7 @@ public class Logic {
 
 		return answer;
 	}
+
 /////////////////////
 //	PATIENT
 	public Messags savePatient(Patient patient) {
@@ -127,9 +130,9 @@ public class Logic {
 
 		return result;
 	}
-	
+
 	///////////////////////////////////////////
-	//DOCTOR
+	// DOCTOR
 	public Messags saveDoctor(Doctor doctor) {
 		Messags result = Messags.ADD_PATIENT_OK;
 		DoctorDAO doctortDAO = new DoctorDAO();
@@ -143,10 +146,11 @@ public class Logic {
 		return doctortDAO.readDoctor(doctortSerch);
 
 	}
+
 	public List searchDoctor() {
-		DoctorDAO doctor =new DoctorDAO();
+		DoctorDAO doctor = new DoctorDAO();
 		return doctor.doctorSearch();
-		
+
 	}
 
 	public Messags updateDoctor(Doctor doctor) {
@@ -162,31 +166,36 @@ public class Logic {
 		DoctorDAO doctortDAO = new DoctorDAO();
 		doctortDAO.deleteDoctor(doctor);
 
-
 		return result;
 	}
-    
+
 /////////////////////////////////////////////
-	
+
 //Speciality
 	public Messags saveSpeciality(Speciality speciality) {
 		Messags result = Messags.ADD_PATIENT_OK;
 		SpecialityDAO specialityDAO = new SpecialityDAO();
 		specialityDAO.createSpeciality(speciality);
 		return result;
-		
+
 	}
 
 	public List searchSpecility() {
-		SpecialityDAO specialityDAO = new SpecialityDAO();		
+		SpecialityDAO specialityDAO = new SpecialityDAO();
 		return specialityDAO.searchSpecility();
 	}
-	
-	
-	
-	
-	
-	
+
+	public Appointment saveAppoiment(Appointment appointment) {
+		AppoimentDAO appoimentDAO = new AppoimentDAO();
+		appoimentDAO.create_Appointment(appointment);
+		return null;
+	}
+
+	public Doctor searchDoctorfromSpeciality(Speciality speciality) {
+		AppoimentDAO appoimentDAO = new AppoimentDAO();		
+		return appoimentDAO.searchDoctorfromSpeciality(speciality);
+	}
+
 ///
 
 }

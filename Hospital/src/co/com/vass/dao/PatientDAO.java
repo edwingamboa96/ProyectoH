@@ -24,10 +24,11 @@ public class PatientDAO extends ConectionDAO {
 	Session session = getSession();
 
 	public Patient readPatienr(Patient patient) {
-		Patient patientRead = null;		
+		Patient patientRead = null;
 		session.beginTransaction();
 		try {
-			Query theStudents = session.createQuery(" from Patient where idnumber=" + "'"+patient.getIdnumber()+"'");		
+			Query theStudents = session
+					.createQuery(" from Patient where idnumber=" + "'" + patient.getIdnumber() + "'");
 			patientRead = (Patient) theStudents.uniqueResult();
 			if (patientRead == null) {
 				isUser = false;
@@ -38,7 +39,7 @@ public class PatientDAO extends ConectionDAO {
 		} finally {
 			session.close();
 		}
-	
+
 		return patientRead;
 	}
 
@@ -54,12 +55,12 @@ public class PatientDAO extends ConectionDAO {
 
 	public boolean deletePatien(Patient patientIN) {
 		session.beginTransaction();
-		
-		//Patient object =session.get(Patient.class, patientIN.getIdPerson());**
+
+		// Patient object =session.get(Patient.class, patientIN.getIdPerson());**
 //		Query theStudents = session.createQuery(" from Patient where document=" + "'" + patientIN.getDocument() + "'");
 //		object = (Patient) theStudents.uniqueResult();
-		
-		//session.delete(object);**
+
+		// session.delete(object);**
 		session.getTransaction().commit();
 		boolean isUser = false;
 		return isUser;
@@ -72,7 +73,5 @@ public class PatientDAO extends ConectionDAO {
 		boolean isUser = false;
 		return isUser;
 	}
-
-	
 
 }

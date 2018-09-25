@@ -15,11 +15,11 @@ public class DoctorDAO extends ConectionDAO {
 	Session session = getSession();
 
 	public List doctorSearch() {
-		List<Doctor> listDoctor = null;
+		List listDoctor = null;
 		Doctor doctor = null;
 		session.beginTransaction();
 		try {
-			Query theStudents = session.createQuery(" from doctor");
+			Query theStudents = session.createQuery(" from Doctor");
 			listDoctor = theStudents.list();
 			session.getTransaction().commit();
 		} finally {

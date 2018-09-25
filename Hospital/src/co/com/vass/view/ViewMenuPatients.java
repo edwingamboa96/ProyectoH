@@ -27,7 +27,7 @@ import java.text.NumberFormat;
 import java.util.List;
 import java.util.Vector;
 import co.com.vass.controller.Coordinator;
-import co.com.vass.modelo.Logic.Messags;
+import co.com.vass.modelo.ControllerDAO.Messags;
 import co.com.vass.vo.Patient;
 import javax.swing.ImageIcon;
 import javax.swing.JRadioButton;
@@ -96,11 +96,13 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		btnUpdate = new JButton("ACTULIZAR");
 		btnUpdate.addActionListener(this);
 		btnUpdate.setIcon(new ImageIcon(ViewMenuPatients.class.getResource("/co/com/vass/resources/save.png")));
+		btnUpdate.addActionListener(this);
 		botones.add(btnUpdate);
 
 		btnDelete = new JButton(" ELIMINAR");
 		btnDelete.addActionListener(this);
 		btnDelete.setIcon(new ImageIcon(ViewMenuPatients.class.getResource("/co/com/vass/resources/delete.png")));
+		btnDelete.addActionListener(this);
 		botones.add(btnDelete);
 
 		JPanel centro = new JPanel();
@@ -136,7 +138,7 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		textPhone.setBounds(92, 141, 86, 20);
 		textPhone.setColumns(10);
 
-		//String genero[] = { "hombre", "mujer" };
+		// String genero[] = { "hombre", "mujer" };
 		String documentType[] = { "cedula", "pasaporte", "targeta identidad" };
 
 		comboDocument = new JComboBox(documentType);
@@ -337,13 +339,14 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		textNatiolaty.setText(patientIN.getNationality());
 		formatAge.setText(String.valueOf(patientIN.getAge()));
 		formatWeight.setText(String.valueOf(patientIN.getWeight()));
+		formatIdNumber.setText(String.valueOf(patientIN.getIdnumber()));
 		formatHeigth.setText(String.valueOf(patientIN.getHeight()));
-	
+
 		setPatient(patientIN);// para guardar el ID
 	}
 
 	public Patient updatePatient() {
-		Patient patient = new Patient();
+		///Patient patient = new Patient();
 		patient.setAge(Integer.parseInt(formatAge.getText()));
 		patient.setHeight(Double.parseDouble(formatHeigth.getText().replace(" ", "").replace(",", ".")));
 		patient.setPhone(textPhone.getText());
@@ -357,7 +360,7 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 		patient.setName(textName.getText());
 		patient.setWeight(Double.parseDouble(formatWeight.getText().replace(" ", "").replace(",", ".")));
 		patient.setIdnumber(Integer.parseInt(formatIdNumber.getText()));
-	//	patient.setIdPerson(getPatient().getIdPerson());// leer el actual ID
+		patient.setIdPatien(patient.getIdPatien());// leer el actual ID
 		return patient;
 	}
 
@@ -368,9 +371,11 @@ public class ViewMenuPatients extends JFrame implements ActionListener, KeyListe
 
 		}
 		if (e.getSource() == btnSerch) {
-			Patient patient = new Patient();
-			patient.setIdnumber(Integer.parseInt(formatSerch.getText()));// leer documento a busacr
-			readUser(coordinator.serchPatient(patient));
+			Patient patientSerch = new Patient();
+			patientSerch.setIdnumber(Integer.parseInt(formatSerch.getText()));
+
+			patient = coordinator.serchPatient(patientSerch);
+			readUser(patient);
 
 		}
 
